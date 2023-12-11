@@ -10,6 +10,7 @@ def load_object(file_path):
         return pickle.load(file_obj)
 
 
+
 def predict(df):
     model = load_object("./artifacts/logisticRegression.pkl")
     return model.predict(df)
